@@ -17,7 +17,7 @@ body {
 
 main {
     max-width: 1200px;
-    margin: 150px;
+    margin: 0 150px;
 }
 
 :root {
@@ -25,7 +25,7 @@ main {
     --offWhite: #FFFAEC;
     --camel: #B38F67;
     --white: #ffff;
-    --black: #0000;
+    --black: #000000;
     --smallGap: 1rem;
     --mediumGap: 2rem;
     --largeGap: 3rem;
@@ -35,7 +35,7 @@ main {
     --h3Size: 25px;
 }
 
-/* Styling af  */
+/* Styling af */
 .btn {
     display: flex;
     gap: var(--mediumGap);
@@ -58,12 +58,29 @@ main {
 
 /* Tekst styling */
 
+h1 {
+    font-size: var(--h1Size);
+    margin: var(--largestGap) 0 var(--mediumGap) 0;
+    color: var(--navy);
+    font-family: "Playfair Display", serif;
+
+    width: fit-content;
+    border-bottom: 2px solid var(--camel);
+    padding-bottom: 0.5rem;
+}
 
 h2 {
     font-size: var(--h2Size);
     margin: var(--largestGap) 0 var(--mediumGap) 0;
     color: var(--navy);
     font-family: "Playfair Display", serif;
+}
+
+
+/* hero start */
+.hero {
+    border-bottom: 1px solid var(--black);
+    padding-bottom: var(--largestGap);
 }
 
 /* Blå boks med billede */
@@ -131,7 +148,7 @@ h2 {
 .header {
     width: 100%;
     background-color: var(--navy);
-    padding: var(--smallGap) var(--largeGap);
+    padding: 0.5rem var(--largeGap);
 
 
     position: sticky;
@@ -144,7 +161,7 @@ h2 {
 /* når man scroller */
 
 .header.scrolled {
-    background-color: rgba(34, 43, 65, 0.15);
+    background-color: rgba(61, 60, 60, 0.15);
 
 }
 
@@ -155,6 +172,14 @@ h2 {
 
 .header.scrolled .user-login {
     color: var(--camel);
+}
+
+.header.scrolled .nav-links a:hover {
+    color: var(--white);
+}
+
+.header.scrolled .user-login:hover {
+    color: var(--white);
 }
 
 .nav {
@@ -185,6 +210,10 @@ h2 {
 }
 
 .nav-links a:hover {
+    color: var(--camel);
+}
+
+.user-login:hover {
     color: var(--camel);
 }
 
@@ -227,9 +256,8 @@ h2 {
     grid-template-columns: repeat(4, 275px);
     width: 100%;
     max-width: none;
-    justify-content: center;
     justify-content: space-between;
-    margin-bottom: var(--largeGap);
+    margin-top: var(--largestGap);
 }
 
 .fep-card-content {
@@ -266,6 +294,7 @@ h2 {
 }
 
 /* Recipe cards */
+/* Placering af alle recipe cards */
 .recipes-cards-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -273,15 +302,18 @@ h2 {
     width: 100%;
 }
 
+/* Det enkelte card */
 .recipe-card {
     width: 100%;
-
 }
 
+/* Cardets billede */
 .recipe-card-img {
     width: 100%;
     height: 250px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./assets/img/apple_and_blackberry_pie_80942_16x9.jpg");
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("./assets/img/apple_and_blackberry_pie_80942_16x9.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -293,14 +325,13 @@ h2 {
 
 .recipe-card-text>p:first-child {
     margin: 0 0 14px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .recipe-card-text h3 {
     margin: 0 0 2px;
-    font-size: 20px;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .recipe-card-text>p:nth-of-type(2) {
@@ -314,15 +345,149 @@ h2 {
     justify-content: space-between;
     gap: var(--smallGap);
     padding-top: 14px;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--black);
 }
 
 .recipe-card-text>div p {
     margin: 0;
 }
 
-/* Pilen */
 .recipe-card-text>div a {
-    color: black;
+    color: var(--black);
+    font-size: 22px;
     text-decoration: none;
+}
+
+/* Recipe filter */
+.recipe-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 28px 0;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    margin: var(--largestGap) 0;
+}
+
+.recipe-filter-options {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.filter-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--smallGap);
+    padding: 0 0 12px;
+    color: black;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter-button i {
+    font-size: 16px;
+}
+
+.filter-button.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 3px;
+    background-color: var(--camel);
+}
+
+.recipe-count {
+    margin: 0;
+    font-weight: 400;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 32px 5%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: var(--largestGap);
+
+    width: 100%;
+    max-width: 1400px;
+    min-height: 170px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 145px;
+    height: auto;
+    display: block;
+}
+
+.footer-column h3 {
+    margin: 0 0 8px;
+    color: var(--camel);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: var(--smallGap);
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #c79b61;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-socials {
+    display: flex;
+    gap: var(--mediumGap);
+}
+
+.footer-socials a {
+    color: var(--camel);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    color: var(--white);
+}
+
+.footer-right p {
+    margin: 0;
 }
