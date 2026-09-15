@@ -83,6 +83,11 @@ h2 {
     padding-bottom: var(--largestGap);
 }
 
+.hero-text {
+    max-width: 700px;
+    font-size: 20px;
+}
+
 /* Blå boks med billede */
 
 .blue-card {
@@ -495,6 +500,53 @@ h2 {
 /* Food stories start */
 
 /* Food stories slut */
+
+/* single food story start */
+
+/* lille author billede + navn */
+.story-author {
+    display: flex;
+    align-items: center;
+    gap: var(--smallGap);
+    margin: var(--largeGap) 0;
+}
+
+.story-author img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.story-author p {
+    color: var(--navy);
+    font-size: 20px;
+}
+
+
+/* indhold */
+
+.food-story-container {
+    display: grid;
+    grid-template-columns: 4 / 1fr;
+    gap: var(--largeGap);
+}
+
+.food-story .p {
+    color: green;
+}
+
+.foodstory-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: var(--mediumGap);
+}
+
+.foodstory-text {}
+
+/* single food story slut */
+
 /* ISABELLA SLUT */
 
 /* FREJA START */
