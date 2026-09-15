@@ -17,7 +17,7 @@ body {
 
 main {
     max-width: 1200px;
-    margin: 150px;
+    margin: 0 150px;
 }
 
 :root {
@@ -25,7 +25,7 @@ main {
     --offWhite: #FFFAEC;
     --camel: #B38F67;
     --white: #ffff;
-    --black: #0000;
+    --black: #000000;
     --smallGap: 1rem;
     --mediumGap: 2rem;
     --largeGap: 3rem;
@@ -35,7 +35,7 @@ main {
     --h3Size: 25px;
 }
 
-/* Styling af  */
+/* Styling af */
 .btn {
     display: flex;
     gap: var(--mediumGap);
@@ -58,12 +58,29 @@ main {
 
 /* Tekst styling */
 
+h1 {
+    font-size: var(--h1Size);
+    margin: var(--largestGap) 0 var(--mediumGap) 0;
+    color: var(--navy);
+    font-family: "Playfair Display", serif;
+
+    width: fit-content;
+    border-bottom: 2px solid var(--camel);
+    padding-bottom: 0.5rem;
+}
 
 h2 {
     font-size: var(--h2Size);
     margin: var(--largestGap) 0 var(--mediumGap) 0;
     color: var(--navy);
     font-family: "Playfair Display", serif;
+}
+
+
+/* hero start */
+.hero {
+    border-bottom: 1px solid var(--black);
+    padding-bottom: var(--largestGap);
 }
 
 /* Blå boks med billede */
@@ -131,7 +148,7 @@ h2 {
 .header {
     width: 100%;
     background-color: var(--navy);
-    padding: var(--smallGap) var(--largeGap);
+    padding: 0.5rem var(--largeGap);
 
 
     position: sticky;
@@ -144,7 +161,7 @@ h2 {
 /* når man scroller */
 
 .header.scrolled {
-    background-color: rgba(34, 43, 65, 0.15);
+    background-color: rgba(61, 60, 60, 0.15);
 
 }
 
@@ -155,6 +172,14 @@ h2 {
 
 .header.scrolled .user-login {
     color: var(--camel);
+}
+
+.header.scrolled .nav-links a:hover {
+    color: var(--white);
+}
+
+.header.scrolled .user-login:hover {
+    color: var(--white);
 }
 
 .nav {
@@ -185,6 +210,10 @@ h2 {
 }
 
 .nav-links a:hover {
+    color: var(--camel);
+}
+
+.user-login:hover {
     color: var(--camel);
 }
 
