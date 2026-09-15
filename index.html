@@ -21,7 +21,7 @@
 
 			<!-- Navigation -->
 			<ul class="nav-links">
-				<li class="current-menu-item"><a href="#">Recipes</a></li>
+				<li><a href="#">Recipes</a></li>
 				<li><a href="#">Stories</a></li>
 				<li><a href="#">Tools</a></li>
 				<li><a href="#">About</a></li>
@@ -44,23 +44,55 @@
 		</nav>
 	</header>
 
-	<main>
-		<section class="hero-homepage">
-			<article>
+	<section class="hero-homepage">
 
+		<div class="hero-homepage-text">
+			<h1>More than what’s on the plate</h1>
+
+			<p>
+				Discover recipes, food stories, trusted utensils and advice
+				from cooks at every level.
+			</p>
+		</div>
+
+		<a href="#homepage-content" class="hero-scroll" aria-label="Scroll down">
+			<i class="fa-solid fa-chevron-down"></i>
+		</a>
+
+	</section>
+	<main id="homepage-content">
+		<!-- Focused Entry Points Card -->
+		<div class="fep-card-container">
+			<article class="fep-card-content">
+				<img class="fep-card-img" src="./assets/img/apple_and_blackberry_pie_80942_16x9.jpg"
+					alt="Apple and Blackberry Pie">
+				<div class="fep-card-text">
+					<h3>APPLE & BLACKBERRY</h3>
+					<p>45 MIN | SARAH COOK</p>
+				</div>
 			</article>
-		</section>
-
-		<article class="hero">
-			<div class="hero-text">
-				<h1>FULL PLATE</h1>
-				<p>Discover the joy of cooking with our curated recipes and inspiring food stories.</p>
-			</div>
-		</article>
-
-		<button class="btn"><a href="#" class="btn-arrow">EXPLORE RECIPES
-				<i class="fa-solid fa-arrow-right"></i></a></button>
-
+			<article class="fep-card-content">
+				<img class="fep-card-img" src="./assets/img/beef casserole.jpg" alt="">
+				<div class="fep-card-text">
+					<h3>BEEF CASSEROLE</h3>
+					<p>20 MIN | JUSTINE PATTESON</p>
+				</div>
+			</article>
+			<article class="fep-card-content">
+				<img class="fep-card-img" src="./assets/img/chicken in a pot.jpg" alt="Chicken with lemon">
+				<div class="fep-card-text">
+					<h3>CHICKEN W. LEMON</h3>
+					<p>60 MIN | NIGELLA LAWSON</p>
+				</div>
+			</article>
+			<article class="fep-card-content">
+				<img class="fep-card-img" src="./assets/img/autumn.jpg" alt="">
+				<div class="fep-card-text">
+					<h3>MANGO SALMON</h3>
+					<p>30 MIN | CRAIG MCANUFF</p>
+				</div>
+			</article>
+		</div>
 
 		<h2>FEATURED FOOD STORY</h2>
 		<!-- Blå card boks -->
@@ -86,119 +118,22 @@
 					</a>
 				</div>
 			</div>
-
 		</div>
 
-
-
-		<!-- Focused Entry Points Card -->
-		<div class="fep-card-container">
-			<article class="fep-card-content">
-				<div class="fep-card-text">
-					<h3>CHICKEN W. LEMON</h3>
-					<p>60 MIN | NIGELLA LAWSON</p>
-				</div>
+		<section class="tools-homepage">
+			<article>
+				<h2>TOOLS PEOPLE TRUST</h2>
+				<p>Tools recomended by people who know how to use the.</p>
+				<button class="btn"><a href="#" class="btn-arrow">EXPLORE RECIPES
+						<i class="fa-solid fa-arrow-right"></i></a></button>
 			</article>
-			<!-- 		<article class="fep-card-content">
-			<div class="fep-card-text">
-				<h3>CHICKEN W. LEMON</h3>
-				<p>60 MIN | NIGELLA LAWSON</p>
+			<div class="tool-img-container">
+				<img class="tool-img-hp" src="./assets/img/david-mendoza-pABS6t4UfVU-unsplash.jpg" alt="">
+				<img class="tool-img-hp" src="./assets/img/cosmin-ursea-_OczI1R8kBI-unsplash.jpg" alt="">
 			</div>
-		</article>
-		<article class="fep-card-content">
-			<div class="fep-card-text">
-				<h3>CHICKEN W. LEMON</h3>
-				<p>60 MIN | NIGELLA LAWSON</p>
-			</div>
-		</article>
-		<article class="fep-card-content">
-			<div class="fep-card-text">
-				<h3>CHICKEN W. LEMON</h3>
-				<p>60 MIN | NIGELLA LAWSON</p>
-			</div>
-		</article> -->
-		</div>
 
-		<!-- Filtre -->
-		<div class="recipe-filter" aria-label="Filter recipes">
-			<div class="recipe-filter-options">
-				<button class="filter-button active" type="button">ALL</button>
-				<button class="filter-button" type="button">TYPE<i class="fa-solid fa-chevron-down"></i></button>
-				<button class="filter-button" type="button">DIFFICULTY<i class="fa-solid fa-chevron-down"></i></button>
-				<button class="filter-button" type="button">CUISINES<i class="fa-solid fa-chevron-down"></i></button>
-				<button class="filter-button" type="button">DIET<i class="fa-solid fa-chevron-down"></i></button>
-			</div>
-			<p class="recipe-count">12 RECIPES</p>
-		</div>
+		</section>
 
-		<!-- Cards til recipes -->
-		<div class="recipes-cards-container">
-
-			<article class="recipe-card">
-				<div class="recipe-card-img"></div>
-				<div class="recipe-card-text">
-					<p>45 MIN</p>
-					<h3>APPLE & BLACKBERRY PIE</h3>
-					<p>This take on a traditional apple pie uses homemade pastry.</p>
-
-					<div>
-						<p>Sarah Cook | Home Cook</p>
-
-						<a href="#" aria-label="Read Apple & Blackberry Pie">
-							<i class="fa-solid fa-arrow-right"></i>
-						</a>
-					</div>
-				</div>
-			</article>
-			<!-- 		<article class="recipe-card">
-			<div class="recipe-card-img"></div>
-			<div class="recipe-card-text">
-				<p>45 MIN</p>
-				<h3>APPLE & BLACKBERRY PIE</h3>
-				<p>This take on a traditional apple pie uses homemade pastry.</p>
-
-				<div>
-					<p>Sarah Cook | Home Cook</p>
-
-					<a href="#" aria-label="Read Apple & Blackberry Pie">
-						<i class="fa-solid fa-arrow-right"></i>
-					</a>
-				</div>
-			</div>
-		</article>
-		<article class="recipe-card">
-			<div class="recipe-card-img"></div>
-			<div class="recipe-card-text">
-				<p>45 MIN</p>
-				<h3>APPLE & BLACKBERRY PIE</h3>
-				<p>This take on a traditional apple pie uses homemade pastry.</p>
-
-				<div>
-					<p>Sarah Cook | Home Cook</p>
-
-					<a href="#" aria-label="Read Apple & Blackberry Pie">
-						<i class="fa-solid fa-arrow-right"></i>
-					</a>
-				</div>
-			</div>
-		</article>
-		<article class="recipe-card">
-			<div class="recipe-card-img"></div>
-			<div class="recipe-card-text">
-				<p>45 MIN</p>
-				<h3>APPLE & BLACKBERRY PIE</h3>
-				<p>This take on a traditional apple pie uses homemade pastry.</p>
-
-				<div>
-					<p>Sarah Cook | Home Cook</p>
-
-					<a href="#" aria-label="Read Apple & Blackberry Pie">
-						<i class="fa-solid fa-arrow-right"></i>
-					</a>
-				</div>
-			</div>
-		</article> -->
-		</div>
 	</main>
 	<footer class="site-footer">
 
