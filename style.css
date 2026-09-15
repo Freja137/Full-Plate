@@ -177,9 +177,8 @@ h2 {
     grid-template-columns: repeat(4, 275px);
     width: 100%;
     max-width: none;
-    justify-content: center;
     justify-content: space-between;
-    margin: var(--largestGap) 0 var(--largeGap);
+    margin-top: var(--largestGap);
 }
 
 .fep-card-content {
@@ -216,6 +215,7 @@ h2 {
 }
 
 /* Recipe cards */
+/* Placering af alle recipe cards */
 .recipes-cards-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -223,15 +223,18 @@ h2 {
     width: 100%;
 }
 
+/* Det enkelte card */
 .recipe-card {
     width: 100%;
-
 }
 
+/* Cardets billede */
 .recipe-card-img {
     width: 100%;
     height: 250px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./assets/img/apple_and_blackberry_pie_80942_16x9.jpg");
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("./assets/img/apple_and_blackberry_pie_80942_16x9.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -243,14 +246,13 @@ h2 {
 
 .recipe-card-text>p:first-child {
     margin: 0 0 14px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .recipe-card-text h3 {
     margin: 0 0 2px;
-    font-size: 20px;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .recipe-card-text>p:nth-of-type(2) {
@@ -264,23 +266,77 @@ h2 {
     justify-content: space-between;
     gap: var(--smallGap);
     padding-top: 14px;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--black);
 }
 
 .recipe-card-text>div p {
     margin: 0;
 }
 
-/* Pilen */
 .recipe-card-text>div a {
-    color: black;
+    color: var(--black);
+    font-size: 22px;
     text-decoration: none;
+}
+
+/* Recipe filter */
+.recipe-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 28px 0;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    margin: var(--largestGap) 0;
+}
+
+.recipe-filter-options {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.filter-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--smallGap);
+    padding: 0 0 12px;
+    color: black;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter-button i {
+    font-size: 16px;
+}
+
+.filter-button.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 3px;
+    background-color: var(--camel);
+}
+
+.recipe-count {
+    margin: 0;
+    font-weight: 400;
+    white-space: nowrap;
+    font-size: 16px;
 }
 
 /* Footer */
 .site-footer {
-    background-color: #202b43;
-    color: white;
+    background-color: var(--navy);
+    color: var(--white);
     padding: 32px 5%;
 }
 
@@ -308,7 +364,7 @@ h2 {
 
 .footer-column h3 {
     margin: 0 0 8px;
-    color: #c79b61;
+    color: var(--camel);
     font-size: 16px;
     font-weight: 600;
 }
@@ -320,12 +376,11 @@ h2 {
 }
 
 .footer-column li {
-    margin-bottom: 10px;
+    margin-bottom: var(--smallGap);
 }
 
 .footer-column a {
     color: white;
-    font-size: 16px;
     text-decoration: none;
 }
 
@@ -341,20 +396,19 @@ h2 {
 
 .footer-socials {
     display: flex;
-    gap: 22px;
+    gap: var(--mediumGap);
 }
 
 .footer-socials a {
-    color: #c79b61;
+    color: var(--camel);
     font-size: 24px;
     text-decoration: none;
 }
 
 .footer-socials a:hover {
-    color: white;
+    color: var(--white);
 }
 
 .footer-right p {
     margin: 0;
-    font-size: 16px;
 }
