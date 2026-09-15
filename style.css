@@ -1,13 +1,20 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* General styling */
 body {
     padding: 0;
-    margin: 100px;
     font-family: "Roboto", sans-serif;
 }
 
 * {
     box-sizing: border-box;
     line-height: 1.5;
+    margin: 0;
+}
+
+main {
+    margin: 150px;
 }
 
 :root {
@@ -18,10 +25,11 @@ body {
     --black: #0000;
     --smallGap: 1rem;
     --mediumGap: 2rem;
-    --largeGarp: 3rem;
+    --largeGap: 3rem;
+    --largestGap: 4rem;
     --h1Size: 60px;
-    --h2Size: 45px;
-    --h3Size: 20px;
+    --h2Size: 35px;
+    --h3Size: 25px;
 }
 
 /* Styling af  */
@@ -44,3 +52,120 @@ body {
 .current-menu-item a:hover {
     color: var(--camel);
 }
+
+/* Tekst styling */
+
+
+h2 {
+    font-size: var(--h2Size);
+    margin: var(--largestGap) 0 var(--mediumGap) 0;
+    color: var(--navy);
+    font-family: "Playfair Display", serif;
+}
+
+/* Blå boks med billede */
+
+.blue-card {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding-left: var(--largeGap);
+    background-color: var(--navy);
+
+    /* så billedet ikke overlapper andet på siden */
+    margin-top: var(--largestGap);
+}
+
+.blue-card-img {
+    width: 50%;
+    height: 375px;
+    object-fit: cover;
+
+    position: relative;
+    top: -37.5px;
+    /* Note til os selv - (fordi height på card er 300px og billedet er 375px) */
+}
+
+.blue-box {
+    width: 100%;
+    background-color: var(--navy);
+    color: var(--white);
+    padding: var(--largeGap);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blue-box h3 {
+    font-size: var(--h3Size);
+    margin: 0 0 var(--mediumGap) 0;
+}
+
+
+.blue-box-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-arrow.blue-card-link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.btn-arrow.blue-card-link:hover {
+    color: var(--camel);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* Blå boks slutter */
+
+/* Header start */
+
+
+.header {
+    width: 100%;
+    background-color: var(--navy);
+    padding: var(--smallGap) var(--largeGap);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: var(--largeGap);
+}
+
+.logo img {
+    width: 80px;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--camel);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--mediumGap);
+}
+
+/* header slut */
