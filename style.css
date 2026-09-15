@@ -179,7 +179,7 @@ h2 {
     max-width: none;
     justify-content: center;
     justify-content: space-between;
-    margin-bottom: var(--largeGap);
+    margin: var(--largestGap) 0 var(--largeGap);
 }
 
 .fep-card-content {
@@ -275,4 +275,86 @@ h2 {
 .recipe-card-text>div a {
     color: black;
     text-decoration: none;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #202b43;
+    color: white;
+    padding: 32px 5%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: var(--largestGap);
+
+    width: 100%;
+    max-width: 1400px;
+    min-height: 170px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 145px;
+    height: auto;
+    display: block;
+}
+
+.footer-column h3 {
+    margin: 0 0 8px;
+    color: #c79b61;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #c79b61;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 22px;
+}
+
+.footer-socials a {
+    color: #c79b61;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    color: white;
+}
+
+.footer-right p {
+    margin: 0;
+    font-size: 16px;
 }
