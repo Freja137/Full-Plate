@@ -1,0 +1,46 @@
+/* General styling */
+body {
+    padding: 0;
+    margin: 100px;
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+:root {
+    --navy: #222B41;
+    --offWhite: #FFFAEC;
+    --camel: #B38F67;
+    --white: #ffff;
+    --black: #0000;
+    --smallGap: 1rem;
+    --mediumGap: 2rem;
+    --largeGarp: 3rem;
+    --h1Size: 60px;
+    --h2Size: 45px;
+    --h3Size: 20px;
+}
+
+/* Styling af  */
+.btn {
+    display: flex;
+    gap: var(--mediumGap);
+    border: none;
+    background: none;
+}
+
+.btn-arrow {
+    color: var(--camel);
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Hover-effekt og markering af den aktive side i navigationen */
+.current-menu-item a,
+.current-menu-item a:hover {
+    color: var(--camel);
+}
