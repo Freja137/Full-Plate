@@ -6,6 +6,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Roboto", sans-serif;
+    background-color: var(--offWhite);
 }
 
 * {
@@ -16,7 +17,7 @@ body {
 
 main {
     max-width: 1200px;
-    margin: 150px;
+    margin: 0 150px;
 }
 
 :root {
@@ -24,7 +25,7 @@ main {
     --offWhite: #FFFAEC;
     --camel: #B38F67;
     --white: #ffff;
-    --black: #0000;
+    --black: #000000;
     --smallGap: 1rem;
     --mediumGap: 2rem;
     --largeGap: 3rem;
@@ -34,7 +35,7 @@ main {
     --h3Size: 25px;
 }
 
-/* Styling af  */
+/* Styling af */
 .btn {
     display: flex;
     gap: var(--mediumGap);
@@ -57,12 +58,29 @@ main {
 
 /* Tekst styling */
 
+h1 {
+    font-size: var(--h1Size);
+    margin: var(--largestGap) 0 var(--mediumGap) 0;
+    color: var(--navy);
+    font-family: "Playfair Display", serif;
+
+    width: fit-content;
+    border-bottom: 2px solid var(--camel);
+    padding-bottom: 0.5rem;
+}
 
 h2 {
     font-size: var(--h2Size);
     margin: var(--largestGap) 0 var(--mediumGap) 0;
     color: var(--navy);
     font-family: "Playfair Display", serif;
+}
+
+
+/* hero start */
+.hero {
+    border-bottom: 1px solid var(--black);
+    padding-bottom: var(--largestGap);
 }
 
 /* Blå boks med billede */
@@ -130,7 +148,38 @@ h2 {
 .header {
     width: 100%;
     background-color: var(--navy);
-    padding: var(--smallGap) var(--largeGap);
+    padding: 0.5rem var(--largeGap);
+
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    transition: background-color 0.3s ease;
+}
+
+/* når man scroller */
+
+.header.scrolled {
+    background-color: rgba(61, 60, 60, 0.15);
+
+}
+
+/* Navigation og ikon bliver camel */
+.header.scrolled .nav-links a {
+    color: var(--camel);
+}
+
+.header.scrolled .user-login {
+    color: var(--camel);
+}
+
+.header.scrolled .nav-links a:hover {
+    color: var(--white);
+}
+
+.header.scrolled .user-login:hover {
+    color: var(--white);
 }
 
 .nav {
@@ -164,10 +213,40 @@ h2 {
     color: var(--camel);
 }
 
+.user-login:hover {
+    color: var(--camel);
+}
+
 .nav-actions {
     display: flex;
     align-items: center;
     gap: var(--mediumGap);
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    width: 230px;
+    padding: 8px 40px 8px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--white);
+    outline: none;
+}
+
+.search i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--navy);
+}
+
+.user-login {
+    color: var(--white);
+    text-decoration: none;
 }
 
 /* header slut */
