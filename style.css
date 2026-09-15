@@ -6,6 +6,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Roboto", sans-serif;
+    background-color: var(--offWhite);
 }
 
 * {
@@ -131,6 +132,29 @@ h2 {
     width: 100%;
     background-color: var(--navy);
     padding: var(--smallGap) var(--largeGap);
+
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    transition: background-color 0.3s ease;
+}
+
+/* når man scroller */
+
+.header.scrolled {
+    background-color: rgba(34, 43, 65, 0.15);
+
+}
+
+/* Navigation og ikon bliver camel */
+.header.scrolled .nav-links a {
+    color: var(--camel);
+}
+
+.header.scrolled .user-login {
+    color: var(--camel);
 }
 
 .nav {
@@ -168,6 +192,32 @@ h2 {
     display: flex;
     align-items: center;
     gap: var(--mediumGap);
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    width: 230px;
+    padding: 8px 40px 8px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--white);
+    outline: none;
+}
+
+.search i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--navy);
+}
+
+.user-login {
+    color: var(--white);
+    text-decoration: none;
 }
 
 /* header slut */
