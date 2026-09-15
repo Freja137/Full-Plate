@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="./assets/js/app.js" defer></script>
+    <title>Full Plate</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="./assets/img/fullplate-logo-offwhite.svg" alt="Full Plate logo">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-links">
+                <li class="current-menu-item"><a href="#">Recipes</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <!-- Search + login -->
+            <div class="nav-actions">
+
+                <div class="search">
+                    <input type="search" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <a href="#" class="user-login">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <article class="hero">
+            <div class="hero-text">
+                <h1>FULL PLATE</h1>
+                <p>Discover the joy of cooking with our curated recipes and inspiring food stories.</p>
+            </div>
+        </article>
+
+        <button class="btn"><a href="#" class="btn-arrow">EXPLORE RECIPES
+                <i class="fa-solid fa-arrow-right"></i></a></button>
+
+
+        <h2>FEATURED FOOD STORY</h2>
+        <!-- Blå card boks -->
+        <div class="blue-card">
+
+            <img class="blue-card-img" src="./assets/img/autumn.jpg" alt="Autumn food">
+
+            <div class="blue-box">
+
+                <div class="blue-box-text">
+                    <h3>AUTUMN IS HERE</h3>
+                    <p>
+                        When the days grow colder, the<br>
+                        kitchen gets warmer.
+                    </p>
+                </div>
+
+                <div class="blue-box-bottom">
+                    <p>Marie | Home Cook</p>
+                    <a href="#" class="btn-arrow blue-card-link">
+                        Read the story
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Focused Entry Points Card -->
+        <div class="fep-card-container">
+            <article class="fep-card-content">
+                <div class="fep-card-text">
+                    <h3>CHICKEN W. LEMON</h3>
+                    <p>60 MIN | NIGELLA LAWSON</p>
+                </div>
+            </article>
+            <!-- 		<article class="fep-card-content">
+			<div class="fep-card-text">
+				<h3>CHICKEN W. LEMON</h3>
+				<p>60 MIN | NIGELLA LAWSON</p>
+			</div>
+		</article>
+		<article class="fep-card-content">
+			<div class="fep-card-text">
+				<h3>CHICKEN W. LEMON</h3>
+				<p>60 MIN | NIGELLA LAWSON</p>
+			</div>
+		</article>
+		<article class="fep-card-content">
+			<div class="fep-card-text">
+				<h3>CHICKEN W. LEMON</h3>
+				<p>60 MIN | NIGELLA LAWSON</p>
+			</div>
+		</article> -->
+        </div>
+
+        <!-- Filtre -->
+        <div class="recipe-filter" aria-label="Filter recipes">
+            <div class="recipe-filter-options">
+                <button class="filter-button active" type="button">ALL</button>
+                <button class="filter-button" type="button">TYPE<i class="fa-solid fa-chevron-down"></i></button>
+                <button class="filter-button" type="button">DIFFICULTY<i class="fa-solid fa-chevron-down"></i></button>
+                <button class="filter-button" type="button">CUISINES<i class="fa-solid fa-chevron-down"></i></button>
+                <button class="filter-button" type="button">DIET<i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+            <p class="recipe-count">12 RECIPES</p>
+        </div>
+
+        <!-- Cards til recipes -->
+        <div class="recipes-cards-container">
+
+            <article class="recipe-card">
+                <div class="recipe-card-img"></div>
+                <div class="recipe-card-text">
+                    <p>45 MIN</p>
+                    <h3>APPLE & BLACKBERRY PIE</h3>
+                    <p>This take on a traditional apple pie uses homemade pastry.</p>
+
+                    <div>
+                        <p>Sarah Cook | Home Cook</p>
+
+                        <a href="#" aria-label="Read Apple & Blackberry Pie">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <!-- 		<article class="recipe-card">
+			<div class="recipe-card-img"></div>
+			<div class="recipe-card-text">
+				<p>45 MIN</p>
+				<h3>APPLE & BLACKBERRY PIE</h3>
+				<p>This take on a traditional apple pie uses homemade pastry.</p>
+
+				<div>
+					<p>Sarah Cook | Home Cook</p>
+
+					<a href="#" aria-label="Read Apple & Blackberry Pie">
+						<i class="fa-solid fa-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</article>
+		<article class="recipe-card">
+			<div class="recipe-card-img"></div>
+			<div class="recipe-card-text">
+				<p>45 MIN</p>
+				<h3>APPLE & BLACKBERRY PIE</h3>
+				<p>This take on a traditional apple pie uses homemade pastry.</p>
+
+				<div>
+					<p>Sarah Cook | Home Cook</p>
+
+					<a href="#" aria-label="Read Apple & Blackberry Pie">
+						<i class="fa-solid fa-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</article>
+		<article class="recipe-card">
+			<div class="recipe-card-img"></div>
+			<div class="recipe-card-text">
+				<p>45 MIN</p>
+				<h3>APPLE & BLACKBERRY PIE</h3>
+				<p>This take on a traditional apple pie uses homemade pastry.</p>
+
+				<div>
+					<p>Sarah Cook | Home Cook</p>
+
+					<a href="#" aria-label="Read Apple & Blackberry Pie">
+						<i class="fa-solid fa-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</article> -->
+        </div>
+    </main>
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="./assets/img/fullplate-logo-offwhite.svg" alt="Full Plate Logo">
+                </a>
+            </div>
+
+            <nav class="footer-column" aria-label="Good to know">
+                <h3>GOOD TO KNOW</h3>
+
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-column" aria-label="Explore">
+                <h3>EXPLORE</h3>
+
+                <ul>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-right">
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+
+                <p>&copy; 2026 Full Plate</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -40,6 +40,7 @@ main {
     display: flex;
     gap: var(--mediumGap);
     border: none;
+    padding: 0;
     background: none;
 }
 
@@ -268,13 +269,24 @@ h2 {
 .fep-card-content {
     position: relative;
     height: 350px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url("./assets/img/chicken\ in\ a\ pot.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.fep-card-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fep-card-content::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.45));
 }
 
 .fep-card-text {
@@ -306,6 +318,7 @@ h2 {
     gap: var(--smallGap);
     width: 100%;
     padding-bottom: var(--largestGap);
+    margin-bottom: var(--largestGap);
 }
 
 /* Det enkelte card */
@@ -320,7 +333,6 @@ h2 {
     background-size: cover;
     object-fit: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 .recipe-card-text {
@@ -551,6 +563,94 @@ h2 {
 
 /* FREJA START */
 /* HP start */
+.hero-homepage {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    min-height: 500px;
+    padding: var(--largestGap);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("./assets/img/sosey-interiors-YABErdnJPGc-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-homepage-text h1 {
+    color: var(--white);
+    font-size: var(--h1Size);
+}
+
+.hero-homepage-text p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.hero-homepage-text {
+    width: 100%;
+    max-width: 900px;
+    color: var(--white);
+}
+
+.hero-scroll i {
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+.hero-scroll {
+    color: var(--white);
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+/* Hoppende pil */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.scrolled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tools-homepage {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--largestGap);
+    margin-top: 100px;
+    padding-top: var(--largestGap);
+    border-top: 1px solid var(--black);
+}
+
+.tools-homepage h2 {
+    margin-top: 0;
+    margin-bottom: var(--smallGap);
+}
+
+.tool-img-container {
+    display: flex;
+    gap: var(--mediumGap);
+}
+
+.tool-img-hp {
+    width: 250px;
+    height: 500px;
+}
+
+.tools-homepage p {
+    padding-bottom: var(--largestGap);
+}
 
 /* HP slut */
 /* FREJA SLUT */
