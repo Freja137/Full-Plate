@@ -686,7 +686,7 @@ h2 {
     object-fit: cover;
 }
 
-.hero-text h1 {
+.hero-text-recipe {
     margin-top: 0;
 }
 
@@ -868,6 +868,23 @@ h2 {
     font-size: 14px;
 }
 
+/* Related recipes */
+.related-recipes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--largestGap);
+    margin-bottom: var(--largestGap);
+}
 
+.related-recipe img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.author-related-recipe {
+    font-weight: 300;
+    margin: var(--smallGap) 0;
+}
 
 /* FREJA SLUT */
