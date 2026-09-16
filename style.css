@@ -386,6 +386,10 @@ h2 {
     text-decoration: none;
 }
 
+.author-level-thin {
+    font-weight: 390;
+}
+
 /* Recipe filter */
 .recipe-filter {
     display: flex;
