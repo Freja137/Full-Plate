@@ -986,4 +986,148 @@ h2 {
     margin-bottom: var(--mediumGap);
 }
 
+/* Login Pop up */
+.account-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1999;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.4s ease,
+        visibility 0.4s ease;
+}
+
+.account-overlay.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.account-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    width: 40%;
+    min-width: 450px;
+    height: 100vh;
+    padding: var(--mediumGap) var(--largestGap);
+
+    color: var(--black);
+    background-color: var(--offWhite);
+    overflow-y: auto;
+
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+}
+
+.account-panel.open {
+    transform: translateX(0);
+}
+
+.close-account {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+    padding: 0;
+    color: var(--navy);
+    background: none;
+    border: none;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.account-panel h2 {
+    margin: 20px 0 var(--smallGap);
+    color: var(--navy);
+    font-family: "Playfair Display", serif;
+}
+
+.account-panel>p {
+    margin: 0 0 var(--largeGap);
+}
+
+.account-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--mediumGap);
+}
+
+.account-form>label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    font-weight: 600;
+}
+
+.account-form input[type="text"],
+.account-form input[type="email"],
+.account-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+
+    background-color: var(--white);
+    border: 2px solid var(--navy);
+
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.cook-level {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.cook-level legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.cook-level label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    font-weight: 500;
+}
+
+.create-account {
+    width: 100%;
+    padding: 14px;
+
+    color: var(--white);
+    background-color: var(--navy);
+    border: none;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.account-login {
+    align-self: center;
+
+    color: var(--camel);
+    font-weight: 600;
+    text-decoration: none;
+}
+
 /* FREJA SLUT */
