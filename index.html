@@ -38,11 +38,69 @@
 				<a href="#" class="user-login">
 					<i class="fa-regular fa-user"></i>
 				</a>
-
 			</div>
-
 		</nav>
+
 	</header>
+	<!-- Login Pop Up -->
+	<div class="account-overlay"></div>
+	<aside class="account-panel">
+
+		<button class="close-account" type="button" aria-label="Close account panel">
+			<i class="fa-solid fa-xmark"></i>
+		</button>
+
+		<h2>CREATE YOUR OWN ACCOUNT</h2>
+
+		<p>
+			Join a community that cooks, shares and celebrates good food.
+		</p>
+
+		<form class="account-form">
+			<label>
+				NAME
+				<input type="text" name="name" placeholder="Your Name">
+			</label>
+
+			<label>
+				EMAIL
+				<input type="email" name="email" placeholder="Your Email">
+			</label>
+
+			<label>
+				PASSWORD
+				<input type="password" name="password" placeholder="Your Password">
+			</label>
+
+			<fieldset class="cook-level">
+				<legend>Choose your cooking level</legend>
+
+				<label>
+					<input type="radio" name="level" value="home-cook" checked>
+					HOME COOK
+				</label>
+
+				<label>
+					<input type="radio" name="level" value="amateur">
+					AMATEUR
+				</label>
+
+				<label>
+					<input type="radio" name="level" value="professional">
+					PRO. CHEF
+				</label>
+			</fieldset>
+
+			<button class="create-account" type="submit">
+				CREATE ACCOUNT
+			</button>
+
+			<a href="#" class="account-login">
+				Already have an account?
+				<i class="fa-solid fa-arrow-right"></i>
+			</a>
+		</form>
+	</aside>
 
 	<section class="hero-homepage">
 
