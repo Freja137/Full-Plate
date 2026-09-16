@@ -93,6 +93,8 @@ h2 {
 
     /* så billedet ikke overlapper andet på siden */
     margin-top: var(--largestGap);
+
+    transition: transform 0.3s ease;
 }
 
 .blue-card-img {
@@ -116,6 +118,10 @@ h2 {
     justify-content: space-between;
 }
 
+.blue-card:hover {
+    transform: scale(1.01);
+}
+
 .blue-box h3 {
     font-size: var(--h3Size);
     margin: 0 0 var(--mediumGap) 0;
@@ -133,7 +139,7 @@ h2 {
     text-decoration: none;
 }
 
-.btn-arrow.blue-card-link:hover {
+.btn-arrow:hover {
     color: var(--camel);
     transform: translateY(-3px);
     transition: all 0.3s ease;
@@ -529,6 +535,12 @@ h2 {
 
 
 /* indhold */
+.story-date {
+    color: var(--camel);
+    margin-bottom: 10px;
+    font-style: italic;
+    margin-top: 10px;
+}
 
 .food-story-container {
     display: grid;
@@ -536,20 +548,69 @@ h2 {
     gap: var(--largeGap);
 }
 
-.food-story .p {
-    color: green;
+.first-letter {
+    font-size: var(--h2Size);
+    color: var(--navy);
+    font-family: "Playfair Display", serif;
 }
 
 .foodstory-img {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    margin-bottom: var(--mediumGap);
+}
+
+.foodstory-text {
+    padding-bottom: var(--mediumGap) 0;
+}
+
+.foodstory-content {
+    max-width: 700px;
+}
+
+.foodstory-content h3 {
+    margin-bottom: 25px;
+}
+
+.foodstory-content .btn {
+    margin-top: 25px;
+}
+
+/* single food story bar */
+.progress {
+    height: 5px;
+    background: var(--camel);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: scroll;
+    animation-timeline: scroll();
+    transform-origin: left;
+
 }
 
 
+@keyframes scroll {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
 
 /* single food story slut */
+
+/* Single Tool */
+
+.tool-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--largeGap);
+    align-items: start;
+}
 
 /* ISABELLA SLUT */
 
