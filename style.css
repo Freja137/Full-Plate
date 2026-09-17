@@ -163,29 +163,6 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-/* når man scroller */
-
-.header.scrolled {
-    background-color: rgba(61, 60, 60, 0.15);
-
-}
-
-/* Navigation og ikon bliver camel */
-.header.scrolled .nav-links a {
-    color: var(--camel);
-}
-
-.header.scrolled .user-login {
-    color: var(--camel);
-}
-
-.header.scrolled .nav-links a:hover {
-    color: var(--white);
-}
-
-.header.scrolled .user-login:hover {
-    color: var(--white);
-}
 
 .nav {
     display: flex;
@@ -589,19 +566,20 @@ h2 {
 }
 
 /* single food story bar */
+
 .progress {
-    height: 5px;
-    background: var(--camel);
-    position: fixed;
-    top: 0;
+    position: absolute;
+    bottom: 0;
     left: 0;
+
+    height: 5px;
     width: 100%;
+    background: var(--camel);
+
     animation-name: scroll;
     animation-timeline: scroll();
     transform-origin: left;
-
 }
-
 
 @keyframes scroll {
     from {
