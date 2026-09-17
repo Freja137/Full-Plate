@@ -163,29 +163,6 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-/* når man scroller */
-
-.header.scrolled {
-    background-color: rgba(61, 60, 60, 0.15);
-
-}
-
-/* Navigation og ikon bliver camel */
-.header.scrolled .nav-links a {
-    color: var(--camel);
-}
-
-.header.scrolled .user-login {
-    color: var(--camel);
-}
-
-.header.scrolled .nav-links a:hover {
-    color: var(--white);
-}
-
-.header.scrolled .user-login:hover {
-    color: var(--white);
-}
 
 .nav {
     display: flex;
@@ -215,6 +192,12 @@ h2 {
 }
 
 .nav-links a:hover {
+    color: var(--camel);
+}
+
+
+/* Den side man befinder sig på */
+.nav-links .current-menu-item a {
     color: var(--camel);
 }
 
@@ -589,19 +572,20 @@ h2 {
 }
 
 /* single food story bar */
+
 .progress {
-    height: 5px;
-    background: var(--camel);
-    position: fixed;
-    top: 0;
+    position: absolute;
+    bottom: 0;
     left: 0;
+
+    height: 5px;
     width: 100%;
+    background: var(--camel);
+
     animation-name: scroll;
     animation-timeline: scroll();
     transform-origin: left;
-
 }
-
 
 @keyframes scroll {
     from {
@@ -1143,3 +1127,84 @@ h2 {
 }
 
 /* FREJA SLUT */
+
+/* Statisk kommentarfelt */
+
+/* Recipe reviews */
+
+.recipe-reviews {
+    margin: var(--largestGap) 0;
+    padding: var(--largestGap) 0;
+    border-top: 1px solid var(--navy);
+}
+
+.reviews-heading {
+    margin-bottom: var(--largeGap);
+}
+
+.reviews-heading>p {
+    margin-bottom: var(--smallGap);
+    color: var(--camel);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.reviews-heading h2 {
+    margin: 0;
+}
+
+.review-list {
+    border-top: 1px solid var(--navy);
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--largeGap);
+
+    padding: var(--largeGap) 0;
+    border-bottom: 1px solid var(--navy);
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: var(--smallGap);
+}
+
+.review-author img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-author h3 {
+    margin: 0 0 4px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.review-author p {
+    margin: 0;
+    color: var(--camel);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.review-content {
+    max-width: 700px;
+}
+
+.review-stars {
+    margin-bottom: var(--smallGap);
+    color: var(--camel);
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+.review-content p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
