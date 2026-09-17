@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <script src="./assets/js/tool.js" defer></script>
     <script src="./assets/js/app.js" defer></script>
 
@@ -13,7 +15,8 @@
 </head>
 
 <body>
-    <div class="progress"></div>
+
+    <!-- HEADER -->
     <header class="header">
         <nav class="nav">
 
@@ -24,10 +27,21 @@
 
             <!-- Navigation -->
             <ul class="nav-links">
-                <li><a href="./recipes.html">Recipes</a></li>
-                <li><a href="./food-stories.html">Stories</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">About</a></li>
+                <li>
+                    <a href="./recipes.html">Recipes</a>
+                </li>
+
+                <li>
+                    <a href="./food-stories.html">Stories</a>
+                </li>
+
+                <li class="current-menu-item">
+                    <a href="./tools.html">Tools</a>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
             </ul>
 
             <!-- Search + login -->
@@ -46,7 +60,11 @@
 
         </nav>
     </header>
+
+
     <main>
+
+        <!-- HERO -->
         <article class="hero tools-hero">
 
             <div class="hero-text">
@@ -55,195 +73,477 @@
             </div>
 
             <div class="tools-hero-images">
+
                 <img src="./assets/img/bank-phrom-OwX4DzrAOq8-unsplash.jpg" alt="Cook working with a mixing bowl">
 
                 <img src="./assets/img/jonathan-kemper-BHVShq4_gvA-unsplash.jpg"
                     alt="Food and kitchen tools on a table">
+
             </div>
 
         </article>
+
+
+        <!-- TOOL OF THE WEEK -->
         <div class="blue-card">
 
-            <img class="blue-card-img" src="./assets/img/jonathan-borba-DbLXK1n27Hc-unsplash.jpg" alt="Autumn food">
+            <img class="blue-card-img" src="./assets/img/jonathan-borba-DbLXK1n27Hc-unsplash.jpg"
+                alt="Kitchen preparation">
 
             <div class="blue-box">
 
                 <div class="blue-box-text">
-                    <p class="tip-of-the-week">TOOL OF THE WEEK</p>
-                    <h3>THE SECRET TO BETTER PREP </h3>
-                    <p>
-                        A nice sharp knife makes prep faster, safer and more enjoyable. It’s the most important tool in
-                        any kitchen.
+
+                    <p class="tip-of-the-week">
+                        TOOL OF THE WEEK
                     </p>
+
+                    <h3>THE SECRET TO BETTER PREP</h3>
+
+                    <p>
+                        A nice sharp knife makes prep faster, safer and more enjoyable.
+                        It’s the most important tool in any kitchen.
+                    </p>
+
                 </div>
 
                 <div class="blue-box-bottom">
+
                     <p>Marie | Home Cook</p>
+
                     <a href="#" class="btn-arrow blue-card-link">
                         Read the story
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
+
                 </div>
+
             </div>
 
         </div>
+
+
+        <!-- TOOL FILTER -->
         <div class="recipe-filter tools-filter" aria-label="Filter tools">
+
             <div class="recipe-filter-options">
-                <button class="filter-button" type="button">ALL</button>
-                <button class="filter-button" type="button">PREP</button>
-                <button class="filter-button" type="button">COOK</button>
-                <button class="filter-button" type="button">BAKE</button>
-                <button class="filter-button active" type="button">SERVE</button>
+
+                <button class="filter-button" type="button">
+                    ALL
+                </button>
+
+                <button class="filter-button" type="button">
+                    PREP
+                </button>
+
+                <button class="filter-button" type="button">
+                    COOK
+                </button>
+
+                <button class="filter-button" type="button">
+                    BAKE
+                </button>
+
+                <button class="filter-button active" type="button">
+                    SERVE
+                </button>
+
             </div>
+
         </div>
+
+
+        <!-- TOOL CARDS -->
         <div class="recipes-cards-container">
 
+
+            <!-- AIRFRYER -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/COLOURBOX65954746.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/COLOURBOX65954746.jpg" alt="Airfryer">
+
                 <div class="recipe-card-text">
+
                     <h3>AIRFRYER</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Justine Pattison</p>
+
+                        <p>
+                            Recommended by Justine Pattison
+                        </p>
+
+                        <a href="#" aria-label="Read more about Airfryer">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
+
+            <!-- CAST IRON PAN -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/eduardo-froza-g7nxm4RuNyk-unsplash.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/eduardo-froza-g7nxm4RuNyk-unsplash.jpg"
+                    alt="Cast iron pan">
+
                 <div class="recipe-card-text">
+
                     <h3>CAST IRON PAN</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Rosie Reynolds</p>
+
+                        <p>
+                            Recommended by Rosie Reynolds
+                        </p>
+
+                        <a href="#" aria-label="Read more about Cast Iron Pan">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
+
+            <!-- COLANDER -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/jaye-haych-57OQe2caoWo-unsplash.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/jaye-haych-57OQe2caoWo-unsplash.jpg" alt="Colander">
+
                 <div class="recipe-card-text">
+
                     <h3>COLANDER</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Rachel Phipps</p>
+
+                        <p>
+                            Recommended by Rachel Phipps
+                        </p>
+
+                        <a href="#" aria-label="Read more about Colander">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
+
+            <!-- KNIFE -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/thapanee-srisawat-ahnczgYo2Fo-unsplash.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/thapanee-srisawat-ahnczgYo2Fo-unsplash.jpg"
+                    alt="Kitchen knife">
+
                 <div class="recipe-card-text">
+
                     <h3>KNIFE</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Nigella Lawson</p>
+
+                        <p>
+                            Recommended by Nigella Lawson
+                        </p>
+
+                        <a href="./single-tool.html" aria-label="Read more about Knife">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
+
+            <!-- MORTAR -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/chris-kursikowski-DRYOPUPaKQM-unsplash.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/chris-kursikowski-DRYOPUPaKQM-unsplash.jpg"
+                    alt="Mortar and pestle">
+
                 <div class="recipe-card-text">
+
                     <h3>MORTAR</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Nigella Lawson</p>
+
+                        <p>
+                            Recommended by Nigella Lawson
+                        </p>
+
+                        <a href="#" aria-label="Read more about Mortar">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
+
+            <!-- MICROWAVE -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/clay-banks-635ZeE2-LWE-unsplash.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/clay-banks-635ZeE2-LWE-unsplash.jpg" alt="Microwave">
+
                 <div class="recipe-card-text">
+
                     <h3>MICROWAVE</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Craig McAnuff</p>
+
+                        <p>
+                            Recommended by Craig McAnuff
+                        </p>
+
+                        <a href="#" aria-label="Read more about Microwave">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
+
+            <!-- POT -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/david-mendoza-u5zsb7Olir8-unsplash.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/david-mendoza-u5zsb7Olir8-unsplash.jpg"
+                    alt="Cooking pot">
+
                 <div class="recipe-card-text">
+
                     <h3>POT</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Justine Patteson</p>
+
+                        <p>
+                            Recommended by Justine Pattison
+                        </p>
+
+                        <a href="#" aria-label="Read more about Pot">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
+
+            <!-- ROLLING PIN -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/lauren-gray-Zqh5l1JWs5M-unsplash.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/lauren-gray-Zqh5l1JWs5M-unsplash.jpg" alt="Rolling pin">
+
                 <div class="recipe-card-text">
+
                     <h3>ROLLING PIN</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Nigella Lawson</p>
+
+                        <p>
+                            Recommended by Nigella Lawson
+                        </p>
+
+                        <a href="#" aria-label="Read more about Rolling Pin">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
+
+            <!-- SERVING PLATTER -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/peter-muniz-ftaqNmLg9Gk-unsplash.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/peter-muniz-ftaqNmLg9Gk-unsplash.jpg"
+                    alt="Serving platter">
+
                 <div class="recipe-card-text">
+
                     <h3>SERVING PLATTER</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Nigella Lawson</p>
+
+                        <p>
+                            Recommended by Nigella Lawson
+                        </p>
+
+                        <a href="#" aria-label="Read more about Serving Platter">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
+
+            <!-- SPATULA -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/jason-briscoe-2o2RGaa6FiY-unsplash.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/jason-briscoe-2o2RGaa6FiY-unsplash.jpg" alt="Spatula">
+
                 <div class="recipe-card-text">
+
                     <h3>SPATULA</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Craig McAnuff</p>
+
+                        <p>
+                            Recommended by Craig McAnuff
+                        </p>
+
+                        <a href="#" aria-label="Read more about Spatula">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
+
+            <!-- STAND MIXER -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/khajonkiet-noobut-BdiWV88jQFg-unsplash.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/khajonkiet-noobut-BdiWV88jQFg-unsplash.jpg"
+                    alt="Stand mixer">
+
                 <div class="recipe-card-text">
+
                     <h3>STAND MIXER</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Rosie Reynolds</p>
+
+                        <p>
+                            Recommended by Rosie Reynolds
+                        </p>
+
+                        <a href="#" aria-label="Read more about Stand Mixer">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
+
+            <!-- WOODEN TOOL -->
             <article class="recipe-card">
-                <img class="recipe-card-img" src="./assets/img/louis-hansel-HwInI4ZRYrk-unsplash.jpg">
+
+                <img class="recipe-card-img" src="./assets/img/louis-hansel-HwInI4ZRYrk-unsplash.jpg"
+                    alt="Wooden kitchen tool">
+
                 <div class="recipe-card-text">
+
                     <h3>WOODEN TOOL</h3>
-                    <p>This comforting beef casserole is a perfect winter warmer.</p>
+
+                    <p>
+                        This comforting beef casserole is a perfect winter warmer.
+                    </p>
 
                     <div>
-                        <p>Recommended by Justine Patteson</p>
+
+                        <p>
+                            Recommended by Justine Pattison
+                        </p>
+
+                        <a href="#" aria-label="Read more about Wooden Tool">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
 
         </div>
+
     </main>
+
+
+    <!-- FOOTER -->
     <footer class="site-footer">
 
         <div class="footer-content">
 
             <div class="footer-logo">
+
                 <a href="index.html">
                     <img src="./assets/img/fullplate-logo-offwhite.svg" alt="Full Plate Logo">
                 </a>
+
             </div>
 
+
             <nav class="footer-column" aria-label="Good to know">
+
                 <h3>GOOD TO KNOW</h3>
 
                 <ul>
@@ -251,22 +551,28 @@
                     <li><a href="#">Terms of use</a></li>
                     <li><a href="#">Cookie Policy</a></li>
                 </ul>
+
             </nav>
 
+
             <nav class="footer-column" aria-label="Explore">
+
                 <h3>EXPLORE</h3>
 
                 <ul>
-                    <li><a href="#">Recipes</a></li>
-                    <li><a href="#">Stories</a></li>
-                    <li><a href="#">Tools</a></li>
+                    <li><a href="./recipes.html">Recipes</a></li>
+                    <li><a href="./food-stories.html">Stories</a></li>
+                    <li><a href="./tools.html">Tools</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
+
             </nav>
+
 
             <div class="footer-right">
 
                 <div class="footer-socials">
+
                     <a href="#" aria-label="Instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
@@ -274,6 +580,7 @@
                     <a href="#" aria-label="Facebook">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
+
                 </div>
 
                 <p>&copy; 2026 Full Plate</p>
@@ -285,3 +592,5 @@
     </footer>
 
 </body>
+
+</html>

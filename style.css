@@ -195,6 +195,12 @@ h2 {
     color: var(--camel);
 }
 
+
+/* Den side man befinder sig på */
+.nav-links .current-menu-item a {
+    color: var(--camel);
+}
+
 .user-login:hover {
     color: var(--camel);
 }
@@ -1121,3 +1127,84 @@ h2 {
 }
 
 /* FREJA SLUT */
+
+/* Statisk kommentarfelt */
+
+/* Recipe reviews */
+
+.recipe-reviews {
+    margin: var(--largestGap) 0;
+    padding: var(--largestGap) 0;
+    border-top: 1px solid var(--navy);
+}
+
+.reviews-heading {
+    margin-bottom: var(--largeGap);
+}
+
+.reviews-heading>p {
+    margin-bottom: var(--smallGap);
+    color: var(--camel);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.reviews-heading h2 {
+    margin: 0;
+}
+
+.review-list {
+    border-top: 1px solid var(--navy);
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--largeGap);
+
+    padding: var(--largeGap) 0;
+    border-bottom: 1px solid var(--navy);
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: var(--smallGap);
+}
+
+.review-author img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-author h3 {
+    margin: 0 0 4px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.review-author p {
+    margin: 0;
+    color: var(--camel);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.review-content {
+    max-width: 700px;
+}
+
+.review-stars {
+    margin-bottom: var(--smallGap);
+    color: var(--camel);
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+.review-content p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
